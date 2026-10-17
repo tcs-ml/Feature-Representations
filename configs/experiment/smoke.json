@@ -1,0 +1,65 @@
+{
+  "kind": "sae",
+  "outputs": "../../outputs/smoke",
+  "experiment": {
+    "name": "smoke_cpu",
+    "seeds": [
+      0
+    ]
+  },
+  "concept": {
+    "families": [
+      {
+        "family": "powerset",
+        "c_values": [
+          3
+        ]
+      },
+      {
+        "family": "transposed_powerset",
+        "c_values": [
+          2
+        ]
+      }
+    ]
+  },
+  "observations": {
+    "signal_dim": 16,
+    "observed_dim": 64,
+    "samples_per_atom": {
+      "train": 200,
+      "validation": 100,
+      "test": 200
+    },
+    "signal_noise_std": 0.1,
+    "mixing_condition_number": 3.0
+  },
+  "model": {
+    "type": "topk_sae",
+    "dictionary_widths": [
+      4,
+      8
+    ],
+    "active_ks": [
+      1,
+      2
+    ],
+    "value_bits_grid": [
+      2
+    ]
+  },
+  "training": {
+    "epochs": 40,
+    "batch_size": 256,
+    "lr": 0.001,
+    "resample_dead": true
+  },
+  "probe": {
+    "types": [
+      "lookup"
+    ]
+  },
+  "analysis": {
+    "confidence_level": 0.95
+  }
+}

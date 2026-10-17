@@ -1,0 +1,32 @@
+{
+  "data_seed": 314159,
+  "experiment": "threshold_pilot",
+  "family": {
+    "dimension": 10,
+    "grid_size": 1024
+  },
+  "model": {
+    "active_per_dimension": 1,
+    "type": "topk_sae",
+    "value_bits_grid": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "width_per_dimension": 2
+  },
+  "samples": {
+    "reconstruction_validation": 16384,
+    "test": 65536,
+    "train": 65536
+  },
+  "seed": 0,
+  "training": {
+    "batch_size": 1024,
+    "epochs": 120,
+    "lr": 0.001,
+    "resample_dead": true
+  }
+}

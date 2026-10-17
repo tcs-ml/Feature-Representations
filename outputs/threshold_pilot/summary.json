@@ -1,0 +1,17 @@
+{
+  "commit_sha": "e81acc38251559646883cc581c0ea15ada306f9b",
+  "device": {
+    "cuda_version": null,
+    "device": "cpu",
+    "device_name": "cpu",
+    "gpu_total_memory_gb": null
+  },
+  "environment": {
+    "numpy": "2.5.1",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6",
+    "torch": "2.13.0"
+  },
+  "quantized_representations": 75,
+  "trained_models": 15
+}

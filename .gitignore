@@ -1,0 +1,40 @@
+# Python Environment
+.venv/
+__pycache__/
+dist/
+.DS_Store
+
+# AI
+CLAUDE.md
+AGENTS.md
+OPINIONS.md
+
+# Local research notes
+/docs/
+/plans/
+/papers/
+
+# Local experiment outputs.
+/outputs/*
+!/outputs/greedy/
+/outputs/greedy/configs/
+!/outputs/sae/
+/outputs/sae/*
+!/outputs/sae/records.csv
+!/outputs/analysis/
+/outputs/analysis/*
+!/outputs/analysis/paper_data/
+!/outputs/threshold_pilot/
+/outputs/threshold_pilot/*
+!/outputs/threshold_pilot/aggregate/
+!/outputs/threshold_pilot/paper_data/
+!/outputs/threshold_pilot/summary.json
+!/outputs/threshold_pilot/runs/
+/outputs/threshold_pilot/runs/*
+!/outputs/threshold_pilot/runs/*/
+/outputs/threshold_pilot/runs/*/*
+!/outputs/threshold_pilot/runs/*/summary.json
+!/outputs/threshold_pilot/runs/*/config.json
+
+# Superseded local result
+/outputs_archive/

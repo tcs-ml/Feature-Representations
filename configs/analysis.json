@@ -1,0 +1,17 @@
+{
+  "kind": "analysis",
+  "outputs": "../outputs/analysis",
+  "sweep": "experiment/sae.json",
+  "sources": {
+    "records": "../outputs/sae/records.csv",
+    "greedy": "../outputs/greedy/scaling_results.json"
+  },
+  "epsilon_grid": [
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2
+  ]
+}

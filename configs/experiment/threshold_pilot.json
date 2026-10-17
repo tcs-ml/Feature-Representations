@@ -1,0 +1,46 @@
+{
+  "kind": "threshold_pilot",
+  "outputs": "../../outputs/threshold_pilot",
+  "experiment": {
+    "name": "threshold_pilot",
+    "initialization_seeds": [
+      0,
+      1,
+      2
+    ],
+    "data_seed": 314159
+  },
+  "family": {
+    "grid_size": 1024,
+    "dimensions": [
+      1,
+      2,
+      4,
+      8,
+      10
+    ]
+  },
+  "samples": {
+    "train": 65536,
+    "reconstruction_validation": 16384,
+    "test": 65536
+  },
+  "model": {
+    "type": "topk_sae",
+    "width_per_dimension": 2,
+    "active_per_dimension": 1,
+    "value_bits_grid": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "training": {
+    "epochs": 120,
+    "batch_size": 1024,
+    "lr": 0.001,
+    "resample_dead": true
+  }
+}

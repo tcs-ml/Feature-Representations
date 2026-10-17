@@ -1,0 +1,9 @@
+{
+  "kind": "suite",
+  "configs": [
+    "experiment/greedy.json",
+    "experiment/sae.json",
+    "experiment/threshold_pilot.json",
+    "analysis.json"
+  ]
+}

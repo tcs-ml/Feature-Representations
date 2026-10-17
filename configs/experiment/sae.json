@@ -1,0 +1,97 @@
+{
+  "kind": "sae",
+  "outputs": "../../outputs/sae",
+  "experiment": {
+    "name": "sae",
+    "seeds": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "concept": {
+    "families": [
+      {
+        "family": "powerset",
+        "c_values": [
+          2,
+          3,
+          4,
+          6,
+          8,
+          10,
+          12,
+          16
+        ]
+      },
+      {
+        "family": "parity",
+        "d_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "family": "transposed_powerset",
+        "c_values": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  "observations": {
+    "signal_dim": 16,
+    "observed_dim": 64,
+    "samples_per_atom": {
+      "train": 500,
+      "validation": 250,
+      "test": 500
+    },
+    "signal_noise_std": 0.1,
+    "mixing_condition_number": 3.0
+  },
+  "model": {
+    "type": "topk_sae",
+    "dictionary_widths": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "active_ks": [
+      1,
+      2,
+      4
+    ],
+    "value_bits_grid": [
+      1,
+      2,
+      4
+    ]
+  },
+  "training": {
+    "epochs": 120,
+    "batch_size": 1024,
+    "lr": 0.001,
+    "resample_dead": true
+  },
+  "probe": {
+    "types": [
+      "lookup",
+      "linear"
+    ]
+  },
+  "analysis": {
+    "confidence_level": 0.95
+  }
+}

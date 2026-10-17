@@ -1,0 +1,24 @@
+{
+  "active_k": 4,
+  "best_reconstruction_validation_mse": 1.3875806079144404e-07,
+  "commit_sha": "e81acc38251559646883cc581c0ea15ada306f9b",
+  "config_hash": "4d36ffa0e20e",
+  "cuda_version": null,
+  "dead_feature_count": 2,
+  "device": "cpu",
+  "device_name": "cpu",
+  "dictionary_width": 8,
+  "dimension": 4,
+  "environment": {
+    "numpy": "2.5.1",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6",
+    "torch": "2.13.0"
+  },
+  "epochs_run": 120,
+  "gpu_total_memory_gb": null,
+  "run_id": "threshold_pilot-r4-4d36ffa0e20e-s2",
+  "seed": 2,
+  "status": "completed",
+  "wall_clock_seconds": 2.8860871251672506
+}
