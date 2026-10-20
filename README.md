@@ -1,8 +1,14 @@
-# Communication Complexity of Universal Features (Experiments)
+# Communication Complexity of Universal Features
 
-1. The greedy experiment runs the maximum-error variant of Algorithm 1 on the threshold product `F_{d*,N}` and records the representation length at every error target.
-2. The finite-family experiment trains top-k sparse autoencoders for reconstruction on the powerset, parity, and coordinate families, selects the smallest representation bit budget that meets each error target on validation, certifies it on test, and compares it with the lossless reference `B_0` and the shattered-set bound `B_sh`.
-3. The threshold-product experiment trains the same autoencoders on noiseless coordinates of `[1024]^r` and measures the worst threshold error against the bit budget per dimension.
+## About
+How many bits must a task-agnostic representation keep so that every task in a family can still be answered accurately?
+Surprisingly, the answer is `Theta(d* log(1/eps))` bits for a family with dual VC dimension `d*`.
+
+These experiments:
+
+1. Run the maximum-error variant of Algorithm 1 on the threshold product `F_{d*,N}`.
+2. Train top-k SAEs for reconstruction on powerset, parity, and coordinate families, select the smallest representation size that meets each error target, and compare against `B_0` and `B_sh`.
+3. Train the SAEs on noiseless coordinates of `[1024]^r` and measure the worst threshold error against the bit budget per dimension.
 
 ## Setup
 
