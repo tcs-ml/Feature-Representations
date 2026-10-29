@@ -1,14 +1,13 @@
 # Communication Complexity of Universal Features
 
 ## About
-How many bits must a task-agnostic representation keep so that every task in a family can still be answered accurately?
-Surprisingly, the answer is `Theta(d* log(1/eps))` bits for a family with dual VC dimension `d*`.
+How many bits must a task-agnostic representation retain to accuractely answer every task in a family? We show that `Theta(d* log(1/eps))` bits are sufficient and worst-case optimal, where `d*` is the dual VC dimension.
 
 These experiments:
 
-1. Run the maximum-error variant of Algorithm 1 on the threshold product `F_{d*,N}`.
-2. Train top-k SAEs for reconstruction on powerset, parity, and coordinate families, select the smallest representation size that meets each error target, and compare against `B_0` and `B_sh`.
-3. Train the SAEs on noiseless coordinates of `[1024]^r` and measure the worst threshold error against the bit budget per dimension.
+1. Verify the greedy algorithm's accuracy-size tradeoff on threshold-product families
+2. Train reconstruction-based top-k sparse autoencoders (SAEs) on powerset, parity, and coordinate families, comparing the minimum bit budgets against theoretical bounds
+3. Evaluate reconstruction-trained SAEs on threshold-product families over [1024]^r, measuring worst-case prediction error as a function of bits per dimension
 
 ## Setup
 
