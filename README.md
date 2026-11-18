@@ -1,5 +1,8 @@
 # Communication Complexity of Universal Features
 
+[![video](https://img.shields.io/badge/video-blue)](https://www.youtube.com/watch?v=5MVRpdY1AYs)
+[![arXiv](https://img.shields.io/badge/Theory_Paper-2026-blue.svg)](https://arxiv.org/abs/2610.27402)
+
 ## About
 How many bits must a task-agnostic representation retain to accuractely answer every task in a family? We show that `Theta(d* log(1/eps))` bits are sufficient and worst-case optimal, where `d*` is the dual VC dimension.
 
