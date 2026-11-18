@@ -1,6 +1,6 @@
 # Communication Complexity of Universal Features
 
-[![video](https://img.shields.io/badge/video-blue)](https://www.youtube.com/watch?v=5MVRpdY1AYs)
+[![Companion Video](https://img.shields.io/badge/Companion_Video-blue)](https://www.youtube.com/watch?v=5MVRpdY1AYs)
 [![arXiv](https://img.shields.io/badge/Theory_Paper-2026-blue.svg)](https://arxiv.org/abs/2610.27402)
 
 ## About
